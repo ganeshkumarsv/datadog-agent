@@ -2,13 +2,25 @@ import os
 import requests
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-DEPENDENCY_REVIEW_RESPONSE = requests.get(
-    f"https://api.github.com/repos/datadog/datadog-agent/dependency-graph/compare/{os.getenv('BASE_REF')}...{os.getenv('HEAD_REF')}",
+PR_NUMBER = os.getenv("PR_NUMBER")
+API_URL = f"https://api.github.com/repos/{os.getenv('GITHUB_REPOSITORY')}/issues/{PR_NUMBER}/comments"
+
+# Check if a comment already exists on the PR
+existing_comment = None
+existing_comments_response = requests.get(
+    API_URL,
     headers={"Authorization": f"Bearer {GITHUB_TOKEN}"}
-).json()
-print(DEPENDENCY_REVIEW_RESPONSE)
-output = ""
-output += "### Vulnerability Report\n\n"
+)
+
+if existing_comments_response.status_code == 200:
+    existing_comments = existing_comments_response.json()
+    for comment in existing_comments:
+        if comment["user"]["login"] == "github-actions" and "Vulnerability Report" in comment["body"]:
+            existing_comment = comment
+            break
+
+# Construct the Vulnerability Report content
+output = "### Vulnerability Report\n\n"
 # Loop through each entry from Dependency Review Response
 for entry in DEPENDENCY_REVIEW_RESPONSE:
     output += f"Change Type: {entry['change_type']}\n"
@@ -18,7 +30,7 @@ for entry in DEPENDENCY_REVIEW_RESPONSE:
     output += f"Version: {entry['version']}\n"
     output += f"Package URL: {entry['package_url']}\n"
     output += f"Source Repository URL: {entry['source_repository_url']}\n"
-    
+
     # Loop through vulnerabilities if present
     vulnerabilities = entry.get('vulnerabilities', [])
     for vulnerability in vulnerabilities:
@@ -31,18 +43,28 @@ for entry in DEPENDENCY_REVIEW_RESPONSE:
         output += f"\tAdvisory Summary: {vulnerability['advisory_summary']}\n"
         output += f"\tCVE: https://nvd.nist.gov/vuln/detail/{CVE_INFO['cve_id']}\n"
 
-print(output)
-
-API_URL = f"https://api.github.com/repos/{os.getenv('GITHUB_REPOSITORY')}/issues/{os.getenv('PR_NUMBER')}/comments"
-print(API_URL)
-response = requests.post(
-    API_URL,
-    headers={"Authorization": f"Bearer {GITHUB_TOKEN}"},
-    json={"body": output},
-)
-
-if response.status_code == 201:
-    print("Comment created successfully.")
+# Update or create the comment
+if existing_comment:
+    update_comment_url = f"{API_URL}/{existing_comment['id']}"
+    update_response = requests.patch(
+        update_comment_url,
+        headers={"Authorization": f"Bearer {GITHUB_TOKEN}"},
+        json={"body": output},
+    )
+    if update_response.status_code == 200:
+        print("Comment updated successfully.")
+    else:
+        print("Failed to update comment.")
+        print(update_response.text)
 else:
-    print("Failed to create comment.")
-    print(response.text)
+    response = requests.post(
+        API_URL,
+        headers={"Authorization": f"Bearer {GITHUB_TOKEN}"},
+        json={"body": output},
+    )
+
+    if response.status_code == 201:
+        print("Comment created successfully.")
+    else:
+        print("Failed to create comment.")
+        print(response.text)
