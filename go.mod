@@ -82,7 +82,7 @@ require (
 	github.com/aws/aws-sdk-go v1.44.320
 	github.com/beevik/ntp v0.3.0
 	github.com/benbjohnson/clock v1.3.0
-	github.com/bhmj/jsonslice v0.0.0-20200323023432-92c3edaad8e2
+	github.com/bhmj/jsonslice v1.1.3
 	github.com/blabber/go-freebsd-sysctl v0.0.0-20201130114544-503969f39d8f
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cenkalti/backoff/v4 v4.2.1
@@ -579,6 +579,7 @@ require (
 	github.com/AdamKorcz/go-118-fuzz-build v0.0.0-20221215162035-5330a85ea652 // indirect
 	github.com/DataDog/datadog-api-client-go/v2 v2.13.0 // indirect
 	github.com/antlr/antlr4/runtime/Go/antlr v1.4.10 // indirect
+	github.com/bhmj/xpression v0.9.1 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/cloudflare/circl v1.3.3 // indirect
