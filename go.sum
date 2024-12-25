@@ -164,8 +164,8 @@ github.com/DataDog/opentelemetry-mapping-go/pkg/otlp/metrics v0.7.0 h1:433zmJS94
 github.com/DataDog/opentelemetry-mapping-go/pkg/otlp/metrics v0.7.0/go.mod h1:uVTWlYOzK82Cf88d57GvcQ+zgPW/kyOBn4xp6tCqi5Y=
 github.com/DataDog/opentelemetry-mapping-go/pkg/quantile v0.7.0 h1:8sRT2Yb9eW7GhRAkqMBrcFDb6WW9D/KslM8D+6EcsYk=
 github.com/DataDog/opentelemetry-mapping-go/pkg/quantile v0.7.0/go.mod h1:m/Vn+wxCD5ND4e0RwIweiBfpihD3NHuVCRDjSvhHYps=
-github.com/DataDog/sketches-go v1.4.2 h1:gppNudE9d19cQ98RYABOetxIhpTCl4m7CnbRZjvVA/o=
-github.com/DataDog/sketches-go v1.4.2/go.mod h1:xJIXldczJyyjnbDop7ZZcLxJdV3+7Kra7H1KMgpgkLk=
+github.com/DataDog/sketches-go v1.4.6 h1:acd5fb+QdUzGrosfNLwrIhqyrbMORpvBy7mE+vHlT3I=
+github.com/DataDog/sketches-go v1.4.6/go.mod h1:7Y8GN8Jf66DLyDhc94zuWA3uHEt/7ttt8jHOBWWrSOg=
 github.com/DataDog/trivy v0.0.0-20230526171704-5aaa4575395e h1:sw8zPMtAx20gY2wSdANQ/Z64B1hOMrku+zoPFGcumLk=
 github.com/DataDog/trivy v0.0.0-20230526171704-5aaa4575395e/go.mod h1:f1nyvEyWU3w5L8dYIQljloMO/BX0i0OK9NwGeZtvmFw=
 github.com/DataDog/viper v1.12.0 h1:FufyZpZPxyszafSV5B8Q8it75IhhuJwH0T7QpT6HnD0=
@@ -2306,8 +2306,8 @@ google.golang.org/protobuf v1.26.0/go.mod h1:9q0QmTI4eRPtz6boOQmLYwt+qCgq0jsYwAQ
 google.golang.org/protobuf v1.27.1/go.mod h1:9q0QmTI4eRPtz6boOQmLYwt+qCgq0jsYwAQnmE0givc=
 google.golang.org/protobuf v1.28.0/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
 google.golang.org/protobuf v1.28.1/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
-google.golang.org/protobuf v1.31.0 h1:g0LDEJHgrBl9N9r17Ru3sqWhkIx2NB67okBHPwC7hs8=
-google.golang.org/protobuf v1.31.0/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
+google.golang.org/protobuf v1.32.0 h1:pPC6BG5ex8PDFnkbrGU3EixyhKcQ2aDuBS36lqK/C7I=
+google.golang.org/protobuf v1.32.0/go.mod h1:c6P6GXX6sHbq/GpV6MGZEdwhWPcYBgnhAHhKbcUYpos=
 gopkg.in/DataDog/dd-trace-go.v1 v1.49.1 h1:fif50dazXYzwPN9fo3HL9B5WortmUTHxPvzP4pdl68o=
 gopkg.in/DataDog/dd-trace-go.v1 v1.49.1/go.mod h1:Yp02hgfGPr9RXeVx4BgQa8uGKm6QD3DG7PohX2pg7bA=
 gopkg.in/Knetic/govaluate.v3 v3.0.0 h1:18mUyIt4ZlRlFZAAfVetz4/rzlJs9yhN+U02F4u1AOc=
