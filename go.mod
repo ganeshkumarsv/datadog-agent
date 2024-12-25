@@ -189,7 +189,7 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.3.12
 	github.com/wI2L/jsondiff v0.3.0
 	github.com/xeipuuv/gojsonschema v1.2.0
-	go.etcd.io/bbolt v1.3.7
+	go.etcd.io/bbolt v1.3.11
 	go.etcd.io/etcd/client/v2 v2.306.0-alpha.0
 	go.mongodb.org/mongo-driver v1.12.1
 	go.opentelemetry.io/collector v0.75.0
@@ -212,7 +212,7 @@ require (
 	golang.org/x/arch v0.4.0
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
 	golang.org/x/net v0.14.0
-	golang.org/x/sync v0.3.0
+	golang.org/x/sync v0.5.0
 	golang.org/x/sys v0.11.0
 	golang.org/x/text v0.12.0
 	golang.org/x/time v0.3.0
