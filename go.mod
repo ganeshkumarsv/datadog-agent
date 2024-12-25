@@ -117,7 +117,7 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.3
-	github.com/google/go-cmp v0.5.9
+	github.com/google/go-cmp v0.6.0
 	github.com/google/go-containerregistry v0.15.2
 	github.com/google/gofuzz v1.2.0
 	github.com/google/gopacket v1.1.19
@@ -178,7 +178,7 @@ require (
 	github.com/streadway/amqp v1.1.0
 	github.com/stretchr/testify v1.8.4
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635
-	github.com/tinylib/msgp v1.1.8
+	github.com/tinylib/msgp v1.2.5
 	github.com/twmb/murmur3 v1.1.8
 	github.com/uptrace/bun v1.1.14
 	github.com/uptrace/bun/dialect/pgdialect v1.1.14
@@ -211,12 +211,12 @@ require (
 	go4.org/netipx v0.0.0-20220812043211-3cc044ffd68d
 	golang.org/x/arch v0.4.0
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
-	golang.org/x/net v0.14.0
-	golang.org/x/sync v0.3.0
-	golang.org/x/sys v0.11.0
-	golang.org/x/text v0.12.0
+	golang.org/x/net v0.26.0
+	golang.org/x/sync v0.7.0
+	golang.org/x/sys v0.21.0
+	golang.org/x/text v0.16.0
 	golang.org/x/time v0.3.0
-	golang.org/x/tools v0.12.0
+	golang.org/x/tools v0.22.0
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
 	google.golang.org/genproto v0.0.0-20230706204954-ccb25ca9f130 // indirect
 	google.golang.org/grpc v1.56.2
@@ -450,7 +450,7 @@ require (
 	github.com/package-url/packageurl-go v0.1.1-0.20220428063043-89078438f170 // indirect
 	github.com/pborman/uuid v1.2.1 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
-	github.com/philhofer/fwd v1.1.2 // indirect
+	github.com/philhofer/fwd v1.1.3-0.20240916144458-20a13a1f6b7c // indirect
 	github.com/pierrec/lz4/v4 v4.1.18 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/power-devops/perfstat v0.0.0-20220216144756-c35f1ee13d7c // indirect
@@ -525,10 +525,10 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v0.37.0
 	go.opentelemetry.io/otel/trace v1.14.0 // indirect
 	go.opentelemetry.io/proto/otlp v0.19.0 // indirect
-	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/mod v0.12.0
+	golang.org/x/crypto v0.24.0 // indirect
+	golang.org/x/mod v0.18.0
 	golang.org/x/oauth2 v0.10.0 // indirect
-	golang.org/x/term v0.11.0 // indirect
+	golang.org/x/term v0.21.0 // indirect
 	gonum.org/v1/gonum v0.12.0 // indirect
 	google.golang.org/api v0.134.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
