@@ -63,7 +63,7 @@ require (
 	github.com/DataDog/opentelemetry-mapping-go/pkg/otlp/attributes v0.7.0
 	github.com/DataDog/opentelemetry-mapping-go/pkg/otlp/metrics v0.7.0
 	github.com/DataDog/opentelemetry-mapping-go/pkg/quantile v0.7.0
-	github.com/DataDog/sketches-go v1.4.2
+	github.com/DataDog/sketches-go v1.4.6
 	github.com/DataDog/viper v1.12.0
 	github.com/DataDog/watermarkpodautoscaler v0.5.2
 	github.com/DataDog/zstd v1.5.5
@@ -221,7 +221,7 @@ require (
 	google.golang.org/genproto v0.0.0-20230706204954-ccb25ca9f130 // indirect
 	google.golang.org/grpc v1.56.2
 	google.golang.org/grpc/examples v0.0.0-20221020162917-9127159caf5a
-	google.golang.org/protobuf v1.31.0
+	google.golang.org/protobuf v1.32.0
 	gopkg.in/DataDog/dd-trace-go.v1 v1.49.1
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
