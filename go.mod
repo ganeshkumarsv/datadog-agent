@@ -77,7 +77,7 @@ require (
 	github.com/alecthomas/participle v0.7.1 // indirect
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137
 	github.com/aquasecurity/trivy-db v0.0.0-20230105123735-5ce110fc82e1
-	github.com/avast/retry-go/v4 v4.5.0
+	github.com/avast/retry-go/v4 v4.6.0
 	github.com/aws/aws-lambda-go v1.37.0
 	github.com/aws/aws-sdk-go v1.44.320
 	github.com/beevik/ntp v0.3.0
@@ -176,7 +176,7 @@ require (
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
 	github.com/streadway/amqp v1.1.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635
 	github.com/tinylib/msgp v1.1.8
 	github.com/twmb/murmur3 v1.1.8
@@ -469,7 +469,7 @@ require (
 	github.com/smira/go-ftp-protocol v0.0.0-20140829150050-066b75c2b70d // indirect
 	github.com/spdx/tools-golang v0.3.1-0.20230104082527-d6f58551be3f // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/stretchr/objx v0.5.0 // indirect
+	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20220721030215-126854af5e6d // indirect
 	github.com/tchap/go-patricia/v2 v2.3.1 // indirect
 	github.com/tedsuo/ifrit v0.0.0-20191009134036-9a97d0632f00 // indirect
