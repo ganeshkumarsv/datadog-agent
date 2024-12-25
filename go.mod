@@ -90,7 +90,7 @@ require (
 	github.com/cilium/ebpf v0.11.0
 	github.com/clbanning/mxj v1.8.4
 	github.com/containerd/cgroups v1.1.0
-	github.com/containerd/containerd v1.7.3
+	github.com/containerd/containerd v1.7.11
 	github.com/containerd/typeurl v1.0.2
 	github.com/containernetworking/cni v1.1.2
 	github.com/coreos/go-semver v0.3.0
