@@ -185,7 +185,7 @@ require (
 	github.com/uptrace/bun/driver/pgdriver v1.1.14
 	github.com/urfave/negroni v1.0.0
 	github.com/vishvananda/netlink v1.2.1-beta.2
-	github.com/vishvananda/netns v0.0.0-20220913150850-18c4f4234207
+	github.com/vishvananda/netns v0.0.5
 	github.com/vmihailenco/msgpack/v4 v4.3.12
 	github.com/wI2L/jsondiff v0.3.0
 	github.com/xeipuuv/gojsonschema v1.2.0
