@@ -146,7 +146,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/moby/sys/mountinfo v0.6.2
 	github.com/mohae/deepcopy v0.0.0-20170603005431-491d3605edfb
-	github.com/netsampler/goflow2 v1.3.3
+	github.com/netsampler/goflow2 v1.3.7
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852
 	github.com/open-policy-agent/opa v0.54.0
@@ -409,7 +409,7 @@ require (
 	github.com/knqyf263/go-rpmdb v0.0.0-20221030142135-919c8a52f04f // indirect
 	github.com/knqyf263/nested v0.0.1 // indirect
 	github.com/liamg/jfather v0.0.7 // indirect
-	github.com/libp2p/go-reuseport v0.2.0 // indirect
+	github.com/libp2p/go-reuseport v0.3.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20220913051719-115f729f3c8c // indirect
 	github.com/lunixbochs/struc v0.0.0-20200707160740-784aaebc1d40 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
