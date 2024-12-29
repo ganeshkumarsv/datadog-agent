@@ -153,6 +153,8 @@ github.com/DataDog/mmh3 v0.0.0-20210722141835-012dc69a9e49 h1:EbzDX8HPk5uE2FsJYx
 github.com/DataDog/mmh3 v0.0.0-20210722141835-012dc69a9e49/go.mod h1:SvsjzyJlSg0rKsqYgdcFxeEVflx3ZNAyFfkUHP0TxXg=
 github.com/DataDog/netlink v1.0.1-0.20230703150631-f11d5ab05838 h1:GNfmQQwU/MJmw/EzKOG6Ap2zHn+psQ/WeDakcPeLC+U=
 github.com/DataDog/netlink v1.0.1-0.20230703150631-f11d5ab05838/go.mod h1:twkDnbuQxJYemMlGd4JFIcuhgX83tXhKS2B/PRMpOho=
+github.com/DataDog/netlink v1.0.1-0.20240220230603-58994826da61 h1:Uih1v1g81L4tZzTILSwbf3uAy3vqqaMVg7B2yynLBAk=
+github.com/DataDog/netlink v1.0.1-0.20240220230603-58994826da61/go.mod h1:twkDnbuQxJYemMlGd4JFIcuhgX83tXhKS2B/PRMpOho=
 github.com/DataDog/nikos v1.12.1 h1:3RukyUKkgWBqVRLLxS85rJ0N1f2dPcr+fJmJWkjIkwI=
 github.com/DataDog/nikos v1.12.1/go.mod h1:GTitIq5weMRdnRZEpCaAS+fgufN1Bm38iq0tVNDT3Ns=
 github.com/DataDog/opentelemetry-mapping-go/pkg/internal/sketchtest v0.7.0 h1:mVnISj3nNq9fQM7C7zi5iuEHWe7tAHS/VNPBs3qc/ug=
