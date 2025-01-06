@@ -12,7 +12,7 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/golang-lru/v2 v2.0.5
-	github.com/skydive-project/go-debouncer v1.0.0
+	github.com/skydive-project/go-debouncer v1.0.1
 	github.com/spf13/cast v1.5.1
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/exp v0.0.0-20221114191408-850992195362
