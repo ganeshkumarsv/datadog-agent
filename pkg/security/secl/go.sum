@@ -48,8 +48,8 @@ github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZN
 github.com/rogpeppe/go-internal v1.9.0 h1:73kH8U+JUqXU8lRuOHeVHaa/SZPifC7BkcraZVejAe8=
 github.com/shopspring/decimal v1.2.0 h1:abSATXmQEYyShuxI4/vyW3tV1MrKAJzCZ/0zLUXYbsQ=
 github.com/shopspring/decimal v1.2.0/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
-github.com/skydive-project/go-debouncer v1.0.0 h1:cqU19PyN7WXsnSlMTANvnHws6lGcbVOH2aDQzwe6qbk=
-github.com/skydive-project/go-debouncer v1.0.0/go.mod h1:7pK+5HBlYCD8W2cXhvMRsMsdWelDEPfpbE6PwSlDX68=
+github.com/skydive-project/go-debouncer v1.0.1 h1:N75Mdusd65Jjbc7k5t2oo+7qLIdMtSNJKssmpEYuSgo=
+github.com/skydive-project/go-debouncer v1.0.1/go.mod h1:7pK+5HBlYCD8W2cXhvMRsMsdWelDEPfpbE6PwSlDX68=
 github.com/spf13/cast v1.3.1/go.mod h1:Qx5cxh0v+4UWYiBimWS+eyWzqEqokIECu5etghLkUJE=
 github.com/spf13/cast v1.5.1 h1:R+kOtfhWQE6TVQzY+4D7wJLBgkdVasCEFxSUBYBYIlA=
 github.com/spf13/cast v1.5.1/go.mod h1:b9PdjNptOpzXr7Rq1q9gJML/2cdGQAo69NKzQ10KN48=
