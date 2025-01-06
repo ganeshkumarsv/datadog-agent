@@ -169,7 +169,7 @@ require (
 	github.com/shirou/gopsutil/v3 v3.23.7
 	github.com/shirou/w32 v0.0.0-20160930032740-bb4de0191aa4
 	github.com/sirupsen/logrus v1.9.3
-	github.com/skydive-project/go-debouncer v1.0.0
+	github.com/skydive-project/go-debouncer v1.0.1
 	github.com/smira/go-xz v0.1.0
 	github.com/spf13/afero v1.9.5
 	github.com/spf13/cast v1.5.1
