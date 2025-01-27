@@ -28,11 +28,11 @@ require (
 	github.com/google/gofuzz v1.2.0
 	github.com/google/uuid v1.3.0
 	github.com/shirou/gopsutil/v3 v3.23.2
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.10.0
 	github.com/tinylib/msgp v1.1.8
 	github.com/vmihailenco/msgpack/v4 v4.3.12
 	go.opentelemetry.io/collector/pdata v1.0.0-rcv0014
-	go.opentelemetry.io/collector/semconv v0.82.0
+	go.opentelemetry.io/collector/semconv v0.118.0
 	go.uber.org/atomic v1.11.0
 	golang.org/x/sys v0.10.0
 	golang.org/x/time v0.3.0
