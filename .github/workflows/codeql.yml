@@ -1,0 +1,66 @@
+name: "Code Scanning - Action"
+
+on:
+  push:
+    branches:
+      - main
+      - "[0-9]+.[0-9]+.x"
+  pull_request:
+    branches:
+      - main
+      - "[0-9]+.[0-9]+.x"
+
+permissions: {}
+jobs:
+  CodeQL-Build:
+    runs-on: ubuntu-20.04
+    permissions:
+      security-events: write
+    strategy:
+      matrix:
+        language: ["go"]  # Run one language at a time
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Clean up to free space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /usr/local/share/boost
+          sudo rm -rf /usr/local/lib/android
+          sudo apt-get clean
+          df -h
+
+      - name: Setup env variables
+        run: |
+          echo "CGO_LDFLAGS= -L${GITHUB_WORKSPACE}/rtloader/build/rtloader -ldl " >> $GITHUB_ENV
+          echo "CGO_CFLAGS= -I${GITHUB_WORKSPACE}/rtloader/include  -I${GITHUB_WORKSPACE}/rtloader/common " >> $GITHUB_ENV
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          ram: 4096
+          threads: 2
+          config: |
+            paths-ignore:
+              - rtloader/build/rtloader/CMakeFiles/datadog-agent-rtloader.dir
+
+      - name: Set Swap Space
+        uses: pierotofy/set-swap-space@v1
+        with:
+          swap-size-gb: 10
+
+      - name: Build DataDog agent
+        run: |
+          invoke install-tools
+          invoke deps
+          invoke agent.build --build-exclude=systemd
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
