@@ -7,7 +7,7 @@ go 1.23.0
 toolchain go1.23.5
 
 require (
-	github.com/DataDog/datadog-agent/comp/otelcol/collector-contrib/def v0.0.0-20250129172314-517df3f51a84
+	github.com/DataDog/datadog-agent/comp/otelcol/collector-contrib/def v0.0.0-00010101000000-000000000000
 	github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector v0.119.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter v0.119.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.119.0
@@ -51,12 +51,6 @@ require (
 	go.opentelemetry.io/collector/receiver v0.119.0
 	go.opentelemetry.io/collector/receiver/nopreceiver v0.119.0
 	go.opentelemetry.io/collector/receiver/otlpreceiver v0.119.0
-)
-
-require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/core/xidutils v0.119.0 // indirect
-	github.com/tilinna/clock v1.1.0 // indirect
-	go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc v0.10.0 // indirect
 )
 
 require (
@@ -212,6 +206,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.119.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.119.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.119.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/core/xidutils v0.119.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata v0.119.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.119.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.119.0 // indirect
@@ -249,6 +244,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
+	github.com/tilinna/clock v1.1.0 // indirect
 	github.com/tinylib/msgp v1.2.5 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
@@ -313,6 +309,7 @@ require (
 	go.opentelemetry.io/contrib/propagators/b3 v1.34.0 // indirect
 	go.opentelemetry.io/contrib/zpages v0.59.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
+	go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc v0.10.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp v0.10.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.34.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.34.0 // indirect
