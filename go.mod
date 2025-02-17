@@ -583,7 +583,7 @@ require (
 	github.com/DataDog/datadog-agent/pkg/networkpath/payload v0.0.0-20250128160050-7ac9ccd58c07
 	github.com/DataDog/datadog-agent/pkg/util/defaultpaths v0.64.0-devel
 	github.com/DataDog/datadog-agent/pkg/util/utilizationtracker v0.0.0
-	github.com/DataDog/dd-trace-go/v2 v2.0.0-beta.11
+	github.com/DataDog/dd-trace-go/v2 v2.0.0-rc.3
 	github.com/NVIDIA/go-nvml v0.12.4-0
 	github.com/cloudflare/cbpfc v0.0.0-20240920015331-ff978e94500b
 	github.com/containerd/containerd/api v1.8.0
@@ -811,7 +811,7 @@ require (
 	github.com/DataDog/datadog-agent/pkg/util/system/socket v0.61.0 // indirect
 	github.com/DataDog/datadog-api-client-go/v2 v2.34.0 // indirect
 	github.com/DataDog/dd-sensitive-data-scanner/sds-go/go v0.0.0-20240816154533-f7f9beb53a42 // indirect
-	github.com/DataDog/go-runtime-metrics-internal v0.0.0-20241106155157-194426bbbd59 // indirect
+	github.com/DataDog/go-runtime-metrics-internal v0.0.4-0.20241206090539-a14610dc22b6 // indirect
 	github.com/DataDog/opentelemetry-mapping-go/pkg/inframetadata v0.24.0 // indirect
 	github.com/DataDog/opentelemetry-mapping-go/pkg/otlp/logs v0.25.0 // indirect
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.26.0 // indirect
