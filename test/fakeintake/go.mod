@@ -2,6 +2,8 @@ module github.com/DataDog/datadog-agent/test/fakeintake
 
 go 1.23.0
 
+toolchain go1.24.1
+
 // every datadog-agent module replaced in the fakeintake go.mod needs to be copied in the Dockerfile
 replace (
 	github.com/DataDog/datadog-agent/comp/netflow/payload => ../../comp/netflow/payload
@@ -15,7 +17,7 @@ require (
 	github.com/DataDog/datadog-agent/comp/netflow/payload v0.56.0-rc.3
 	github.com/DataDog/datadog-agent/pkg/networkpath/payload v0.0.0-20250128160050-7ac9ccd58c07
 	github.com/DataDog/datadog-agent/pkg/proto v0.56.0-rc.3
-	github.com/DataDog/zstd v1.5.6
+	github.com/DataDog/zstd v1.5.7
 	github.com/benbjohnson/clock v1.3.5
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/google/uuid v1.6.0
